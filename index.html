@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>연극 '도로시의 여행 이야기' 음악 리스트</title>
+    <!-- 카카오톡 · 페이스북 · 기타 SNS 링크 미리보기 (Open Graph) -->
+    <meta name="description" content="연극 '도로시의 여행 이야기' 음악 리스트">
+    <link rel="canonical" href="https://gamjagf.github.io/dorothy/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="도로시의 여행 이야기">
+    <meta property="og:title" content="연극 '도로시의 여행 이야기' 음악 리스트">
+    <meta property="og:description" content="연극 '도로시의 여행 이야기' 음악 리스트">
+    <meta property="og:url" content="https://gamjagf.github.io/dorothy/">
+    <meta property="og:image" content="https://gamjagf.github.io/dorothy/dorothy_kakao_thumbnail.jpg">
+    <meta property="og:image:secure_url" content="https://gamjagf.github.io/dorothy/dorothy_kakao_thumbnail.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="연극 '도로시의 여행 이야기' 음악 리스트">
+    <meta name="twitter:image" content="https://gamjagf.github.io/dorothy/dorothy_kakao_thumbnail.jpg">
+    <style>
+        body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px 10px; line-height: 1.5; }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 { text-align: center; color: #2c3e50; font-size: 1.6em; margin-bottom: 5px; }
+        p.subtitle { text-align: center; color: #7f8c8d; font-size: 0.95em; margin-bottom: 25px; }
+        
+        .list-wrap { display: flex; flex-direction: column; gap: 12px; }
+        .row { background: #fff; border-radius: 12px; padding: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.04); display: flex; align-items: center; justify-content: space-between; border: 1px solid #eaeaea; transition: transform 0.2s; }
+        .row:hover { background-color: #f8fafc; border-color: #d1d5db; }
+        
+        .col-info { display: flex; align-items: center; gap: 12px; flex: 1.2; min-width: 180px; }
+        .num { background-color: #2c3e50; color: #fff; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.1em; flex-shrink: 0; }
+        .chapter { font-weight: bold; color: #2980b9; font-size: 1.15em; white-space: nowrap; }
+        .confirmed { color: #e74c3c; font-size: 0.85em; font-weight: bold; background-color: #ffeaea; padding: 3px 8px; border-radius: 12px; white-space: nowrap; }
+        
+        .col-title { flex: 2; padding: 0 15px; }
+        .title { font-weight: bold; color: #2c3e50; font-size: 1.15em; display: block; margin-bottom: 4px; }
+        .desc { font-size: 0.9em; color: #7f8c8d; display: block; }
+        
+        .col-actions { flex: 1.5; display: flex; flex-direction: column; gap: 8px; align-items: flex-end; }
+        .btn-group { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; width: 100%; }
+        
+        /* 버튼 공통 스타일 */
+        a.file, a.link, label.lyric { 
+            display: inline-flex; align-items: center; justify-content: center; 
+            text-decoration: none; padding: 10px 14px; border-radius: 8px; 
+            font-size: 0.95em; font-weight: bold; transition: all 0.2s; 
+            white-space: nowrap; box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+            border: none; font-family: inherit; margin: 0; box-sizing: border-box;
+            cursor: pointer;
+            -webkit-user-select: none; user-select: none; -webkit-touch-callout: none;
+        }
+        a.file { background-color: #27ae60; color: #fff; }
+        a.file:hover { background-color: #219a52; transform: translateY(-1px); }
+        a.link { background-color: #8e44ad; color: #fff; }
+        a.link:hover { background-color: #7d3c98; transform: translateY(-1px); }
+        
+        label.lyric { background-color: #f39c12; color: #fff; line-height: 1.5; }
+        label.lyric:hover { background-color: #d68910; transform: translateY(-1px); }
+        label.lyric:active { transform: translateY(1px); background-color: #b9770e; }
+        
+        @media screen and (max-width: 768px) {
+            h1 { font-size: 1.4em; }
+            .row { flex-direction: column; align-items: flex-start; padding: 18px 15px; gap: 12px; }
+            .col-info { width: 100%; padding-bottom: 12px; border-bottom: 1px dashed #e2e8f0; justify-content: flex-start; }
+            .col-title { width: 100%; padding: 0; margin-bottom: 8px; }
+            .col-actions { width: 100%; align-items: center; }
+            .btn-group { flex-direction: column; width: 100%; }
+            a.file, a.link, label.lyric { width: 100%; font-size: 1.05em; padding: 12px; }
+        }
+
+        /* 자바스크립트 없는 순수 CSS 팝업(모달) 스타일 */
+        .modal-toggle { display: none; }
+        .modal { 
+            display: none; position: fixed; z-index: 9999; left: 0; top: 0; 
+            width: 100%; height: 100%; justify-content: center; align-items: center;
+        }
+        .modal-backdrop {
+            position: absolute; left: 0; top: 0; width: 100%; height: 100%; 
+            background-color: rgba(0,0,0,0.6); backdrop-filter: blur(3px); cursor: pointer;
+        }
+        .modal-content { 
+            background-color: #fff; border-radius: 16px; width: 85%; max-width: 500px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2); position: relative; max-height: 75vh; 
+            display: flex; flex-direction: column; z-index: 10000; padding: 25px;
+        }
+        .close-btn { 
+            position: absolute; right: 20px; top: 15px; font-size: 32px; font-weight: bold; 
+            color: #a0aec0; cursor: pointer; display: inline-block; line-height: 1;
+        }
+        .close-btn:hover { color: #4a5568; }
+        .modal-title { 
+            margin-top: 0; color: #2d3748; font-size: 1.3em; margin-bottom: 15px; 
+            padding-right: 30px; border-bottom: 2px solid #edf2f7; padding-bottom: 10px;
+        }
+        .modal-body { 
+            overflow-y: auto; white-space: pre-wrap; font-size: 1.15em; line-height: 1.7; 
+            color: #2d3748; padding-right: 5px; flex-grow: 1; font-family: 'Malgun Gothic', sans-serif;
+        }
+
+        /* 토글 스위치가 켜지면 해당 모달을 보이게 함 */
+        #lyric-toggle-1:checked ~ #modal-1,
+        #lyric-toggle-4:checked ~ #modal-4,
+        #lyric-toggle-8:checked ~ #modal-8,
+        #lyric-toggle-11:checked ~ #modal-11,
+        #lyric-toggle-17:checked ~ #modal-17 {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <!-- 모달 제어용 숨김 체크박스들 -->
+    <input type="checkbox" id="lyric-toggle-1" class="modal-toggle">
+    <input type="checkbox" id="lyric-toggle-4" class="modal-toggle">
+    <input type="checkbox" id="lyric-toggle-8" class="modal-toggle">
+    <input type="checkbox" id="lyric-toggle-11" class="modal-toggle">
+    <input type="checkbox" id="lyric-toggle-17" class="modal-toggle">
+
+    <div class="container">
+        <h1>연극 '도로시의 여행 이야기' 음악 리스트</h1>
+        <p class="subtitle">모바일 최적화 (재생 및 가사 지원)</p>
+
+        <div class="list-wrap">
+            <div class="row">
+                <div class="col-info"><span class="num">1</span><span class="chapter">1장 in</span><span class="confirmed">[확정]</span></div>
+                <div class="col-title"><span class="title">오프닝 송 〈손잡고 떠나는 여행〉</span><span class="desc">(밝고 희망찬 동요풍 뮤지컬 넘버)</span></div>
+                <div class="col-actions">
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/1CMsDsqUwz2Ld5zRVdPVojLDOAFwBdVtH/view?usp=sharing" target="_blank" class="file">▶ (연장)손잡고떠나는여행</a>
+                        <a href="https://drive.google.com/file/d/12Jl7QEmH2x3_ShULF21UPI2UBaU559Gm/view?usp=sharing" target="_blank" class="file">▶ 오프닝(58)</a>
+                        <label for="lyric-toggle-1" class="lyric" onclick="openLyric('1')">📜 가사 보기</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-info"><span class="num">2</span><span class="chapter">1장 두 번째</span></div>
+                <div class="col-title"><span class="title">회오리바람 / 폭풍 전야 (BGM)</span><span class="desc">(긴장감 넘치는 연극용 언더스코어)</span></div>
+                <div class="col-actions"><div class="btn-group"><a href="https://drive.google.com/file/d/1SldtkRqThP-eLcEz_DopXTn6fH7yi1zF/view?usp=sharing" target="_blank" class="file">▶ 회오리 바람</a></div></div>
+            </div>
+
+            <div class="row">
+                <div class="col-info"><span class="num">3</span><span class="chapter">1장 네번째</span></div>
+                <div class="col-title"><span class="title">먼치킨들의나라</span></div>
+                <div class="col-actions">
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/15fHAw2lKDDWtrjKQcX6gBOnrgzD9BPO7/view?usp=drive_link" target="_blank" class="file">▶ 먼치킨들의나라 (후보1)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-info"><span class="num">4</span><span class="chapter">1장 마지막</span><span class="confirmed">[확정]</span></div>
+                <div class="col-title"><span class="title">글린다의 축복</span><span class="desc">(아름답고 우아한 판타지풍 여성 독창)</span></div>
+                <div class="col-actions">
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/144fxjyVBMcOV2P7WPe2Ywq0_0y96KWhR/view?usp=sharing" target="_blank" class="file">▶ (대사제거)그대의길에축복을</a>
+                        <a href="https://drive.google.com/file/d/1AvmgnuzdI66cx0SzptWsf1VVlclKyFJ_/view?usp=drivesdk" target="_blank" class="file">▶ 그대의 길에 축복을(94)</a>
+                        <a href="https://drive.google.com/file/d/13Cz6Pwux5Pz3eO6OxU_LAjqkSelhd6en/view?usp=sharing" target="_blank" class="file">▶ 그대의 길에 축복을(85)</a>
+                        <label for="lyric-toggle-4" class="lyric" onclick="openLyric('4')">📜 가사 보기</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-info"><span class="num">5</span><span class="chapter">2장 in</span><span class="confirmed">[확정]</span></div>
+                <div class="col-title"><span class="title">허수아비 등장 (BGM)</span><span class="desc">(긴장감 넘치는 연극용 언더스코어)</span></div>
+                <div class="col-actions"><div class="btn-group"><a href="https://drive.google.com/file/d/16le4yLsYjFsCyexXrRFhfp57cdzGPntn/view?usp=sharing" target="_blank" class="file">▶ 허수아비 등장</a></div></div>
+            </div>
+
+            <div class="row">
+                <div class="col-info"><span class="num">6</span><span class="chapter">3장 in</span><span class="confirmed">[확정]</span></div>
+                <div class="col-title"><span class="title">까마귀들의 춤</span></div>
+                <div class="col-actions"><div class="btn-group"><a href="https://drive.google.com/file/d/1iDJER1gPACivMLiw02oYP-VTpXEJrjCP/view?usp=sharing" target="_blank" class="file">▶ 까마귀들의 춤</a></div></div>
+            </div>
+
+            <div class="row">
+                <div class="col-info"><span class="num">7</span><span class="chapter">4장 in</span></div>
+                <div class="col-title"><span class="title">삐걱양철탐색</span></div>
+                <div class="col-actions"><div class="btn-group"><a href="https://drive.google.com/file/d/1EQVfuWCkFWsmja0QT7pxPSEgrpclJeDQ/view?usp=drive_link" target="_blank" class="file">▶ 삐걱양철탐색</a></div></div>
+            </div>
+
+            <div class="row">
+                <div class="col-info"><span class="num">8</span><span class="chapter">4장 두 번째</span><span class="confirmed">[확정]</span></div>
+                <div class="col-title"><span class="title">기름칠</span></div>
+                <div class="col-actions">
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/1GyzeY3JqkQ5hFiNavEMKTLfTUdVZ8Uw8/view?usp=sharing" target="_blank" class="file">▶ 기름칠</a>
+                        <label for="lyric-toggle-8" class="lyric" onclick="openLyric('8')">📜 가사 보기</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-info"><span class="num">9</span><span class="chapter">5장 in</span></div>
+                <div class="col-title"><span class="title">동쪽마녀와 어머니. 양철</span></div>
+                <div class="col-actions">
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/1KGc_JSJHQozZwqnAawgXrHXluSse6YJs/view?usp=sharing" target="_blank" class="file">▶ 동쪽마녀와 어머니. 양철</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-info"><span class="num">10</span><span class="chapter">6장 in</span></div>
+                <div class="col-title"><span class="title">겁쟁이사자소동</span></div>
+                <div class="col-actions"><div class="btn-group"><a href="https://drive.google.com/file/d/1ToEKNMTngJCaqEvWPTR3SLkVbUc9Wpaw/view?usp=drive_link" target="_blank" class="file">▶ 겁쟁이사자소동</a></div></div>
+            </div>
+
+            <div class="row">
+                <div class="col-info"><span class="num">11</span><span class="chapter">7장 마지막</span><span class="confirmed">[확정]</span></div>
+                <div class="col-title"><span class="title">여정의 합창 〈자, 떠나자!〉</span><span class="desc">(에메랄드 성을 향하는 일행의 행진곡)</span></div>
+                <div class="col-actions">
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/1iJ4uSbct-vor4EfcYAdnEakBN3-hWaGm/view?usp=sharing" target="_blank" class="file">▶ 여정의 합창 〈자, 떠나자!〉</a>
+                        <label for="lyric-toggle-11" class="lyric" onclick="openLyric('11')">📜 가사 보기</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-info"><span class="num">12</span><span class="chapter">8장 in</span></div>
+                <div class="col-title"><span class="title">들쥐와살쾡이추격전</span></div>
+                <div class="col-actions"><div class="btn-group"><a href="https://drive.google.com/file/d/1_JdQlypaVdM_ZEdXnCYKWQMpiSI_6KJx/view?usp=drive_link" target="_blank" class="file">▶ 들쥐와살쾡이추격전</a></div></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-info"><span class="num">13</span><span class="chapter"></span></div>
+                <div class="col-title"><span class="title">사자를 옮기는 생쥐들</span></div>
+                <div class="col-actions">
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/1RxeLfaxEU5O6dYxfai3ABU-EqHOsnfNh/view?usp=sharing" target="_blank" class="file">▶ 생쥐영차</a>
+                        <a href="https://drive.google.com/file/d/10w0zX-VdVFopo8E5mLg2AmJKJ7LZuslD/view?usp=sharing" target="_blank" class="file">▶ 생쥐영차빠른</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-info"><span class="num">14</span><span class="chapter">10장 in</span></div>
+                <div class="col-title"><span class="title">오즈 등장〈위대한 오즈〉</span><span class="desc">(다크 카바레/서커스 유랑극단 스타일)</span></div>
+                <div class="col-actions">
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/1VTtOb7djjBYvoVwtNyyCugYAYeVCR2Xc/view?usp=sharing" target="_blank" class="file">▶ 오즈등장</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-info"><span class="num">15</span><span class="chapter"></span></div>
+                <div class="col-title"><span class="title">서쪽마녀를 찾아서 출발</span></div>
+                <div class="col-actions">
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/1qgoqE1XVwYXRUeyP7SoDBDqrqOq9z6IO/view?usp=sharing" target="_blank" class="file">▶ 서쪽마녀찾아서</a>
+                        <a href="https://drive.google.com/file/d/1WYcrIntSKBYWRFv-JXrKMsgTB0KkUmPD/view?usp=sharing" target="_blank" class="file">▶ 서쪽마녀찾아서2</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-info"><span class="num">16</span><span class="chapter">11장 in</span></div>
+                <div class="col-title"><span class="title">윙키와 원숭이떼</span><span class="desc">(빠르고 혼란스러운 톰과 제리식 코믹 액션 연주곡)</span></div>
+                <div class="col-actions">
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/1cvw_yKNP0Oz8OgZEMfMNiX80P_vvAcmi/view?usp=sharing" target="_blank" class="file">▶ 〈Ch11_in_날개달린원숭이.mp3〉</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-info"><span class="num">17</span><span class="chapter">11장 두 번째</span></div>
+                <div class="col-title"><span class="title">윙키 테마곡 &lt;내가 바로 윙키다&gt;</span><span class="desc">(보통 빠르기의 과시용 코믹 빌런 테마)</span></div>
+                <div class="col-actions">
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/1cTyOzMlBr6qXJfjS91UHTTXPglFhj04M/view?usp=sharing" target="_blank" class="file">▶ &lt;윙키송&gt;</a>
+                        <label for="lyric-toggle-17" class="lyric" onclick="openLyric('17')">📜 가사 보기</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-info"><span class="num">18</span><span class="chapter"></span></div>
+                <div class="col-title"><span class="title">주문거는 서쪽마녀</span></div>
+                <div class="col-actions">
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/14cGBJLV7TMEfFPnClCspnN-aG8b-8kKO/view?usp=sharing" target="_blank" class="file">▶ 칠리치크주문</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-info"><span class="num">19</span><span class="chapter"></span></div>
+                <div class="col-title"><span class="title">물에녹는 윙키</span></div>
+                <div class="col-actions"><div class="btn-group"><a href="https://drive.google.com/file/d/1UBfE2jDr5erKn43k56-Alh8n2aPUa51s/view?usp=sharing" target="_blank" class="file">▶ 물에녹는윙키</a></div></div>
+            </div>
+
+            <div class="row">
+            <div class="col-info"><span class="num">20</span><span class="chapter"></span></div>
+            <div class="col-title"><span class="title">되살아나는 양철,허수아비 효과음</span></div>
+            <div class="col-actions">
+                <div class="btn-group">
+                    <a href="https://drive.google.com/file/d/122kblisqpk5okW0DLeLw_4mNLr1sXv48/view?usp=sharing" target="_blank" class="file">▶ 원숭이주문</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-info"><span class="num">21</span><span class="chapter">14장 in</span></div>
+                <div class="col-title"><span class="title">오즈 이야기</span></div>
+                <div class="col-actions">
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/1JzVrakuG9KD7xWbJvkNyxvx6UeuEoDzG/view?usp=drive_link" target="_blank" class="file">▶ Ch14_in_오즈이야기</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-info"><span class="num">22</span><span class="chapter">14장 두 번째</span></div>
+                <div class="col-title"><span class="title">그린다 테마</span></div>
+                <div class="col-actions"><div class="btn-group"><a href="https://drive.google.com/file/d/1dFHLNBg7zfuNYURp-_UwuYXCAZk5aJ5_/view?usp=drive_link" target="_blank" class="file">▶ 그린다 테마</a></div></div>
+            </div>
+
+            <div class="row">
+                <div class="col-info"><span class="num">23</span><span class="chapter"></span></div>
+                <div class="col-title"><span class="title">잘가 도로시</span></div>
+                <div class="col-actions"><div class="btn-group"><a href="https://drive.google.com/file/d/1NVbs-JogLzVCNuTgxrMTjAX1xqvTlxlr/view?usp=sharing" target="_blank" class="file">▶ 엔딩</a></div></div>
+            </div>
+
+            <div class="row">
+                <div class="col-info"><span class="num">24</span><span class="chapter">14장 네 번째</span></div>
+                <div class="col-title"><span class="title">피날레송 손잡고 떠나는 여행</span></div>
+                <div class="col-actions">
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/1HFHSIYBJOgKVZyEUYSTMxTNrej0z30OP/view?usp=sharing" target="_blank" class="file">▶ 피날레 손잡고 떠나는여행</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-info"><span class="num">25</span><span class="chapter"></span></div>
+                <div class="col-title"><span class="title">관객입장 시 배경음악</span></div>
+                <div class="col-actions">
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/11FeYfU1t3kfyCfip_xb3i5pDsGJ-wuSw/view?usp=sharing" target="_blank" class="file">▶ (연주곡)손잡고떠나는여행</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-info"><span class="num">26</span><span class="chapter"></span></div>
+                <div class="col-title"><span class="title">효과음 모음</span></div>
+                <div class="col-actions">
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/1t2qyOTX41kMgjAtR87COomn4VrCwqJZ6/view?usp=sharing" target="_blank" class="file">▶ 물벼락</a>
+                        <a href="https://drive.google.com/file/d/1mqcZ4wlhQsGQf_0I9jLdnr6bHSzVsv_N/view?usp=sharing" target="_blank" class="file">▶ 천둥번개</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 1번 가사 모달 -->
+    <div id="modal-1" class="modal">
+        <label for="lyric-toggle-1" class="modal-backdrop"></label>
+        <div class="modal-content">
+            <label for="lyric-toggle-1" class="close-btn">&times;</label>
+            <h2 class="modal-title">1번: 오프닝 송 〈손잡고 떠나는 여행〉</h2>
+            <div class="modal-body">
+[Verse 1]
+저기 멀리 보이는 낯선 길 너머
+어떤 꿈이 우리를 기다려줄까
+두근두근 떨리는 작은 발걸음
+서로서로 손잡고 함께 걸어가
+
+[Chorus]
+비어 있는 마음은 채워주면서
+잃어버린 용기를 찾아주면서
+우리 함께 손잡고 떠나는 여행
+아름다운 빛으로 가득 찰 거야
+가득 찰 거야
+            </div>
+        </div>
+    </div>
+
+    <!-- 4번 가사 모달 -->
+    <div id="modal-4" class="modal">
+        <label for="lyric-toggle-4" class="modal-backdrop"></label>
+        <div class="modal-content">
+            <label for="lyric-toggle-4" class="close-btn">&times;</label>
+            <h2 class="modal-title">4번: 글린다의 축복</h2>
+            <div class="modal-body">
+두려워 말아요, 도로시.
+그대의 길은 열릴 거예요.
+
+낯선 길을 걷더라도
+희망을 잃지 말아요.
+작은 용기 하나가
+기적을 피워 낼 테니.
+
+별빛은 그대를 비추고
+바람은 그대를 이끌리.
+어디로 향하든 그대의 마음에
+빛이 함께하기를!
+
+가렴, 가렴, 사랑스러운 아이야!
+너의 꿈을 향해 가렴!
+오늘의 눈물이 별이 되고
+너의 내일이 빛나기를!
+
+그대의 길에 축복을────!
+
+도로시, 행운을 빌어요.
+마법의 힘도 그대와 함께할 거예요.
+            </div>
+        </div>
+    </div>
+
+    <!-- 8번 가사 모달 (기존 9번) -->
+    <div id="modal-8" class="modal">
+        <label for="lyric-toggle-8" class="modal-backdrop"></label>
+        <div class="modal-content">
+            <label for="lyric-toggle-8" class="close-btn">&times;</label>
+            <h2 class="modal-title">8번: 기름칠</h2>
+            <div class="modal-body">
+[Verse 1]
+기름통 기름통 찾았다 기름통
+삐걱 삐걱 꼼짝 못하는 양철 아저씨를
+움직여 보자
+여기 한 방울 톡
+저기 한 방울 톡
+굳어 버린 팔을 살살살 움직여 봐
+하나 둘 하나 둘
+어깨도 빙글 팔꿈치 빙글
+자 이제 움직여 볼까
+
+[Chorus]
+기름칠 기름칠 삐걱 삐걱 기름칠
+왼쪽에도 슥슥 오른쪽에도 슥슥
+기름칠 기름칠 구석구석 기름칠
+하나 둘 셋 움직인다
+
+[Verse 2]
+이번에는 다리 한쪽 다리 쏙
+반대쪽도 쏙
+무릎을 굽혔다 쭉 펴고
+발끝을 들었다 쿵
+한 걸음 두 걸음
+조심해요
+으차 으차 이야챠
+
+[Chorus]
+기름칠 기름칠 삐걱 삐걱 기름칠
+팔도 움직이고 다리도 움직이고
+기름칠 기름칠 신나는 기름칠
+하나 둘 셋 움직인다
+내가 움직인다
+            </div>
+        </div>
+    </div>
+
+    <!-- 11번 가사 모달 (기존 12번) -->
+    <div id="modal-11" class="modal">
+        <label for="lyric-toggle-11" class="modal-backdrop"></label>
+        <div class="modal-content">
+            <label for="lyric-toggle-11" class="close-btn">&times;</label>
+            <h2 class="modal-title">11번: 여정의 합창 〈자, 떠나자!〉</h2>
+            <div class="modal-body">
+위대한 마법사 오즈를 만나면
+우리 먼치킨은 뇌를 갖게 될 거예요!
+닉 아저씨는 따뜻한 마음을 갖게 될 거예요!
+램버트는 용기를 얻게 될 거구!
+도로시는 집으로 돌아갈 거예요!
+
+자, 떠나자! 에메랄드 성으로!
+우리의 소원들을 가득 안고서
+어깨동무 하나 둘 셋, 두려울 건 없지
+위대한 마법사 오즈를 향해, 다 함께 출발!
+            </div>
+        </div>
+    </div>
+    
+    <!-- 17번 가사 모달 (기존 18번) -->
+    <div id="modal-17" class="modal">
+        <label for="lyric-toggle-17" class="modal-backdrop"></label>
+        <div class="modal-content">
+            <label for="lyric-toggle-17" class="close-btn">&times;</label>
+            <h2 class="modal-title">17번: 윙키 테마곡 &lt;내가 바로 윙키다&gt;</h2>
+            <div class="modal-body">
+아, 하하하하!
+
+서쪽 하늘을 뒤덮은 어둠!
+모두가 두려워하는 마법!
+
+감히 나를 없애겠다고?
+가소로운 것들!
+
+내가 바로 서쪽 마녀 윙키다!
+이 서쪽 땅의 지배자!
+내게 맞서는 자는
+산산조각 나리라!
+
+내가 바로…
+서쪽 마녀 윙키다!
+
+아, 하하하하!
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 가사 데이터
+        const lyricsData = {
+            "1": {
+                title: "1번: 오프닝 송 〈손잡고 떠나는 여행〉",
+                text: `[Verse 1]
+저기 멀리 보이는 낯선 길 너머
+어떤 꿈이 우리를 기다려줄까
+두근두근 떨리는 작은 발걸음
+서로서로 손잡고 함께 걸어가
+
+[Chorus]
+비어 있는 마음은 채워주면서
+잃어버린 용기를 찾아주면서
+우리 함께 손잡고 떠나는 여행
+아름다운 빛으로 가득 찰 거야
+가득 찰 거야`
+            },
+            "4": {
+                title: "4번: 글린다의 축복",
+                text: `두려워 말아요, 도로시.
+그대의 길은 열릴 거예요.
+
+낯선 길을 걷더라도
+희망을 잃지 말아요.
+작은 용기 하나가
+기적을 피워 낼 테니.
+
+별빛은 그대를 비추고
+바람은 그대를 이끌리.
+어디로 향하든 그대의 마음에
+빛이 함께하기를!
+
+가렴, 가렴, 사랑스러운 아이야!
+너의 꿈을 향해 가렴!
+오늘의 눈물이 별이 되고
+너의 내일이 빛나기를!
+
+그대의 길에 축복을────!
+
+도로시, 행운을 빌어요.
+마법의 힘도 그대와 함께할 거예요.`
+            },
+            "8": {
+                title: "8번: 기름칠",
+                text: `[Verse 1]
+기름통 기름통 찾았다 기름통
+삐걱 삐걱 꼼짝 못하는 양철 아저씨를
+움직여 보자
+여기 한 방울 톡
+저기 한 방울 톡
+굳어 버린 팔을 살살살 움직여 봐
+하나 둘 하나 둘
+어깨도 빙글 팔꿈치 빙글
+자 이제 움직여 볼까
+
+[Chorus]
+기름칠 기름칠 삐걱 삐걱 기름칠
+왼쪽에도 슥슥 오른쪽에도 슥슥
+기름칠 기름칠 구석구석 기름칠
+하나 둘 셋 움직인다
+
+[Verse 2]
+이번에는 다리 한쪽 다리 쏙
+반대쪽도 쏙
+무릎을 굽혔다 쭉 펴고
+발끝을 들었다 쿵
+한 걸음 두 걸음
+조심해요
+으차 으차 이야챠
+
+[Chorus]
+기름칠 기름칠 삐걱 삐걱 기름칠
+팔도 움직이고 다리도 움직이고
+기름칠 기름칠 신나는 기름칠
+하나 둘 셋 움직인다
+내가 움직인다`
+            },
+            "11": {
+                title: "11번: 여정의 합창 〈자, 떠나자!〉",
+                text: `위대한 마법사 오즈를 만나면
+우리 먼치킨은 뇌를 갖게 될 거예요!
+닉 아저씨는 따뜻한 마음을 갖게 될 거예요!
+램버트는 용기를 얻게 될 거구!
+도로시는 집으로 돌아갈 거예요!
+
+자, 떠나자! 에메랄드 성으로!
+우리의 소원들을 가득 안고서
+어깨동무 하나 둘 셋, 두려울 건 없지
+위대한 마법사 오즈를 향해, 다 함께 출발!`
+            },
+            "17": {
+                title: "17번: 윙키 테마곡 <내가 바로 윙키다>",
+                text: `아, 하하하하!
+
+서쪽 하늘을 뒤덮은 어둠!
+모두가 두려워하는 마법!
+
+감히 나를 없애겠다고?
+가소로운 것들!
+
+내가 바로 서쪽 마녀 윙키다!
+이 서쪽 땅의 지배자!
+내게 맞서는 자는
+산산조각 나리라!
+
+내가 바로…
+서쪽 마녀 윙키다!
+
+아, 하하하하!`
+            }
+        };
+
+        function openLyric(id) {
+            if(!lyricsData[id]) return;
+            // 모바일 스크롤 방지
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeLyric() {
+            // 모바일 스크롤 방지 해제
+            document.body.style.overflow = "auto";
+        }
+
+        // 팝업 CSS 토글 스위치 이벤트 리스너 연결
+        document.querySelectorAll('.modal-toggle').forEach(toggle => {
+            toggle.addEventListener('change', function() {
+                if(this.checked) {
+                    document.body.style.overflow = "hidden";
+                } else {
+                    document.body.style.overflow = "auto";
+                }
+            });
+        });
+        
+    </script>
+</body>
+</html>
